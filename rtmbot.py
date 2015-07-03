@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import sys
 sys.dont_write_bytecode = True
@@ -60,7 +61,7 @@ class RtmBot(object):
                     if limiter == True:
                         time.sleep(.1)
                         limiter = False
-                    message = output[1].encode('ascii','ignore')
+                    message = output[1].encode('utf8')
                     channel.send_message("{}".format(message))
                     limiter = True
     def crons(self):
