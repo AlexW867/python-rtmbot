@@ -1,4 +1,5 @@
-mport time
+# -*- coding: utf-8 -*-
+import time
 import re
 crontable = []
 outputs = []
@@ -15,5 +16,5 @@ def process_message(data):
             msg = msg.replace(u"珠到", u"知道")
             msg = msg.replace(u"口寧", u"可能")
             msg = msg.replace(u"開俗", u"開始")
-#outputs.append([data['channel'], u"阿鬼 你還是講中文吧:")
+#outputs.append([data['channel'], u"阿鬼 你還是講中文吧:"])
             outputs.append([data['channel'], msg])
