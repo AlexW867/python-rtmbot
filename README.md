@@ -1,5 +1,9 @@
 # python-rtmbot for python3
 
+* git submodule update --init --recursive
+* cd /modules/slackclient;python setup.py install
+* pip install -r requirements.txt
+
 python-rtmbot
 ---------
 A Slack bot written in python that connects via the RTM API.
